@@ -7,15 +7,19 @@ import ConnectSection from "../components/ConnectSection";
 import CategorySection from "../components/CategorySection";
 
 
+
 function Home() {
     return (
+        
 
         <div>
+            
            <HeroSection/>
             <LatestArrivals/>
             <CommunitySection/>
             <CategorySection/>
             <ConnectSection/>
+        
         </div>
     )
 }

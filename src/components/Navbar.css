@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Navigation menu on the left */
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Underline on hover for navigation links */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline the text */
+    color: #ddd; /* Optional: Change the color on hover */
+}
+
+/* Ensure the right-icons container has enough space and doesn't get cut off */
+.right-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align icons to the right */
+    flex-wrap: nowrap; /* Prevent icons from wrapping */
+    padding-right: 20px; /* Add padding to ensure full visibility */
+    gap: 20px; /* Add space between elements for better layout */
+}
+
+/* Search bar and icon styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 150px; /* Adjusted width to create more room for icons */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: -30px; /* Overlay icon inside input */
+    color: #555;
+}
+
+.search-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Icon styles (profile,cart) */
+.right-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-icons a svg {
+    width: 22px; /* Ensure icons are clearly visible */
+    height: 22px;
+    stroke-width: 2;
+}
+
+/* Icon hover effect */
+.right-icons a:hover {
+    color: #ddd;
+}
+
+/* Maintain the original header size */
+header {
+    background-color: #333;
+    color: white;
+    padding-bottom: 0;
+}
+/* Optional: Adjusting main nav list styles for consistency */
+.nav-list {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: flex-start; /* Align items */
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+.nav-list li {
+    margin-right: 20px; /* Space between items */
+}
+
+.nav-list li a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 14px; /* Font size */
+}
+
+.nav-list li a:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/*close the header styles*/
+
+.cart-icon-container {
+    position: relative; /*quantity*/
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  
+  .cart-icon-badge {
+    position: absolute;
+    top: -14px; /* Adjust this to move the badge up or down */
+    right: 1px; /* Adjust this to move the badge left or right */
+    color: white;
+    border-radius: 50%;
+    padding: 0 6px;
+    font-size: 12px;
+  }
+  
+ 

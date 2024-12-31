@@ -1,0 +1,29 @@
+ /* Profile Icon */
+.profile-icon {
+    
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.profile-icon:hover {
+    color: #ffffff; /* Example hover color */
+}
+
+.profile-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    transition: stroke 0.3s ease;
+}
+
+.profile-icon:hover svg {
+    stroke: #ffffff; /* Example hover effect for the SVG icon */
+}

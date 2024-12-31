@@ -1,0 +1,248 @@
+/*products*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Style for the header top: logo, nav, search, and icons */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 40px; /* Increased padding for a bigger header */
+    background-color: #333;
+    color: white;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't push the header beyond the page */
+}
+
+
+ /*shop page's all products heading*/
+ .shopBg::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-attachment: fixed;
+  opacity: 0.8;
+}
+
+
+.all-products-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.all-products-section h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    color: #cbac9e;
+    
+}
+/*space between categories*/
+.category-section {
+    margin-bottom: 1px;
+}
+/*name of the food*/
+.category-section h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(204, 168, 122)
+}
+
+/* Force product-grid to hold all products in one row */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center items in the grid */
+    max-width: 1200px; /* Set a max width for the grid */
+    margin: 0 auto; /* Center the grid on the page */
+}
+/*styles in box*/
+
+.product-card {
+    background-color: #73522ad0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px; /* Fixed width for each product card */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(225, 226, 230, 0.1);
+    transition: transform 0.2s;
+    flex: 0 0 250px; /* Fix each product card's width */
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.buy-button {
+    background-color: #53220c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #b7b6b4;
+    color: #823333;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Section heading styles */
+.footer-section h4 {
+    margin-bottom: 10px; /* Space below heading */
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+/* Unordered list styles */
+.footer-section ul {
+    list-style-type: none; /* No bullets */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+/* Link styles */
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ddd; /* Optional: Change color on hover */
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .layout-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-container {
+    margin-top: 64px; /* Ensures content starts below the fixed navbar */
+    flex-grow: 1;
+  }
+  
+  
+  /* Apply overlay effect on the image */
+  .carousel-slide {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darkens the image for better text readability */
+  }
+  
+  /* Content overlay styling */
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Left-align the text */
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    max-width: 50%;
+  }
+  
+  /* Title styling */
+  .carousel-title {
+    font-size: 3rem !important; /* Larger font size for the title */
+    color: white !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px;
+  }
+  
+  /* Description styling */
+  .carousel-description {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 0 20px;
+  }
+  
+  /* Button styling */
+  .carousel-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  
+  /* General Section Styles */
+  .latest-arrivals-section {
+    padding: 3rem 0;
+  }
+  
+  .product-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

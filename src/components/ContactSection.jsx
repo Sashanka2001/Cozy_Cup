@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import './ContactSection.css';
 
 const ContactSection = () => {
     return (
@@ -31,13 +32,13 @@ const ContactSection = () => {
                                 <h5 className="contact-info">No. 234, Chapel Road, Colombo</h5>
                             </div>
                             <div className="contact-social-links">
-                                <a href="#" className="contact-social-link">
+                                <a href="https://web.facebook.com/?_rdc=1&_rdr#" className="contact-social-link">
                                     <FaFacebookF />
                                 </a>
-                                <a href="#" className="contact-social-link">
+                                <a href="https://www.instagram.com/" className="contact-social-link">
                                     <FaInstagram />
                                 </a>
-                                <a href="#" className="contact-social-link">
+                                <a href="https://lk.linkedin.com/" className="contact-social-link">
                                     <FaLinkedinIn />
                                 </a>
                             </div>

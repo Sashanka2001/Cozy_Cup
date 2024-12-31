@@ -1,24 +1,25 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './CategorySection.css';
 
 const CategorySection = () => {
     const navigate = useNavigate();
 
     const categories = [
         {
-            id: 1, // Add unique id for Bedding
+            id: 1,  
             title: 'Food',
             description: 'Savory delights with a touch of luxury',
             imageUrl: 'https://www.eatingwell.com/thmb/fchLI7rLbosps8YY86Fg0WvaNMw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simple-1200-Calorie-Meal-Plan-30-Day-Week-4-square-1b62b48d21f44b268c060dd2ebe28e6b.jpg',
         },
         {
-            id: 2, // Add unique id for Bath Linen
+            id: 2, 
             title: 'Desserts',
             description: 'Decadent desserts crafted for pure indulgence',
             imageUrl: 'https://tmfcakedesigns.com/cdn/shop/products/TMFCakeDesigns_Xmas_25.jpg?v=1672791219&width=1500',
         },
         {
-            id: 3, // Add unique id for Bed Linen
+            id: 3, 
             title: 'Beverages',
             description: 'Refreshing beverages, pure bliss in every sip',
             imageUrl: 'https://www.rachelcooks.com/wp-content/uploads/2024/10/oat-milk-hot-chocolate-1500-11-square.jpg',

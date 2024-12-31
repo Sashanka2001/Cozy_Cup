@@ -1,0 +1,91 @@
+/*about*/
+/* CommunitySection.css */
+
+.community-section {
+    padding: 96px 0;
+    position: relative;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  @media (min-width: 1024px) {
+    .text-content {
+      align-items: flex-start;
+    }
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a202c;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 1024px) {
+    .title {
+      text-align: left;
+    }
+  }
+  
+  .description {
+    color: #4a5568;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  @media (min-width: 1024px) {
+    .description {
+      text-align: left;
+    }
+  }
+  
+  .get-started-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #8e590e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #d3b167;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+  }

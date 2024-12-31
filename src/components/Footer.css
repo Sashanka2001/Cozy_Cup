@@ -1,0 +1,90 @@
+ /* Footer Section */
+.footer {
+  width: 100%;
+  padding: 1px 0;
+  background-color: #ebe7e4;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.footer-logo-svg {
+  width: 160px;
+  height: 32px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .footer-links {
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+  }
+}
+
+.footer-link {
+  color: #00040a;
+  font-size: 1.125rem;
+  transition: color 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #5e5e5e; /* Add hover effect for buttons */
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/*2025, All rights reserved.*/
+.footer-copyright {
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 32px;
+  display: block;
+}
+
+/*©COZY_CUP*/
+.footer-copyright-link {
+  color: #000206;
+  text-decoration: none;
+}
+
+.footer-logo-link,
+.footer-social-link {
+  display: inline-block;
+}
+
+/* Styles for the buttons */
+button.footer-link {
+  background: none;
+  border: none;
+  font-size: 1.125rem;
+  color: #00040a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+ 

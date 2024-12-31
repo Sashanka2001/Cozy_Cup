@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Layout, Menu, Badge, Input } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import {Link, useLocation, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ProfileIcon from './ProfileIcon';
-import axios from 'axios';
+import './Navbar.css';
+import { useCart } from '../contexts/CartContext'; // Import useCart to get the cart state
 
 const { Header } = Layout;
 
 const Navbar = ({ location, onSearch }) => {
-    const router = useNavigate();
+    const { cartItems } = useCart(); // Access cart items from context
     const [searchTerm, setSearchTerm] = useState('');
+    const router = useNavigate();
+
+    // Calculate the total quantity of items in the cart
+    const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     const handleSearch = (e) => {
-        const value = e.target.value; // Access value correctly
+        const value = e.target.value;
         setSearchTerm(value);
 
         if (location.pathname === '/shop') {
@@ -20,9 +25,9 @@ const Navbar = ({ location, onSearch }) => {
         }
     };
 
-    const handleOnCLick = () => {
+    const handleOnClick = () => {
         router('/shopping-cart');
-    }
+    };
 
     return (
         <Header
@@ -70,28 +75,35 @@ const Navbar = ({ location, onSearch }) => {
                 </Menu.Item>
             </Menu>
 
-            {/* Search Bar - Only on Shop Route */}
-            {location.pathname === '/shop' && (
-                <Input
-                    placeholder="Search for products..."
-                    value={searchTerm}
-                    onChange={handleSearch} // Pass the full event object
+            {/* Search Input */}
+            <Input
+                placeholder="Search for products..."
+                value={searchTerm}
+                onChange={handleSearch}
+                style={{
+                    borderRadius: '20px',
+                    width: '300px',
+                    marginRight: '16px',
+                    border: 'none',
+                    padding: '8px 16px',
+                }}
+            />
+
+             {/* Cart Icon with Badge */}
+            <div className="cart-icon-container" onClick={handleOnClick}>
+                <ShoppingCartOutlined
                     style={{
-                        borderRadius: '20px',
-                        width: '300px',
+                        fontSize: '1.5rem',
+                        color: 'white',
                         marginRight: '16px',
-                        border: 'none',
-                        padding: '8px 16px',
                     }}
                 />
-            )}
-
-            {/* Cart Icon with Badge */}
-            <Badge offset={[10, 0]} onClick={handleOnCLick}>
-                <ShoppingCartOutlined
-                    style={{ fontSize: '1.5rem', color: 'white', marginRight: '16px' }}
-                />
-            </Badge>
+                {totalQuantity > 0 && (
+                    <div className="cart-icon-badge">
+                        {totalQuantity}
+                    </div>
+                )}
+            </div>
 
             {/* Profile Icon */}
             <ProfileIcon />
