@@ -1,26 +1,49 @@
 
-
 /* Register Form Styles */
+.register-page {
+  background-image: url('../../assets/Shop_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure the overlay is positioned correctly */
+}
+
+
 .register-section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
+    position: relative;
   }
-  
-  .register-container {
-    background-color: rgb(235, 221, 191);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-  
+
+  .transparent-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: -1; /* Ensure it stays behind the form content */
+}
+
+.register-container {
+  background-color: rgba(219, 198, 151, 0.9); /* Semi-transparent background for form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  position: relative; /* Ensures the content stays above the overlay */
+}
+
   h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    color: #000000;
+     
   }
   
   .form-group {
