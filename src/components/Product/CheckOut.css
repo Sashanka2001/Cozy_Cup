@@ -1,0 +1,44 @@
+/* Container for the checkout page */
+.checkout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header for the checkout page */
+  .checkout-container h1 {
+    font-size: 36px;
+    color: #cbac9e;
+    margin-bottom: 20px;
+  }
+  
+  /* Total price text */
+  .checkout-container p {
+    font-size: 20px;
+    margin: 10px 0 30px;
+    color: #333;
+  }
+  
+  /* Highlight total price */
+  .checkout-container p b {
+    font-size: 22px;
+    color: #000;
+  }
+  
+  /* Style for PayPal button section */
+  .paypal-buttons {
+    margin-top: 20px;
+  }
+  
+  /* Success message (optional) */
+  .success-message {
+    font-size: 18px;
+    color: #4caf50;
+    margin-top: 20px;
+  }
+  
