@@ -41,7 +41,7 @@ import { useNavigate } from 'react-router-dom'; //navigate the cart
             </div>
 
             <div className="product-card">
-                <img src="https://i0.wp.com/ovenfresh.in/wp-content/uploads/2023/02/Baked-Cherry-Cheese-Cake750gms1.jpg?fit=1500%2C1500&ssl=1" />
+                <img src="https://www.allrecipes.com/thmb/i5P0KLhak30ifECS6vSkCDalvac=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1x1-GOLDMAN_ALR0123_Faves_Cheesecake_6464-c9f1fa1330d441fc9ce0197f46949d9c.jpg" />
                 <h2> Cheesecake</h2>
                 <h5><p>Smooth, creamy, and melt-in-your-mouth perfection with a hint of tanginess.</p></h5>
                     <p><b>Price = Rs.1500</b> </p>

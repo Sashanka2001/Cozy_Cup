@@ -16,7 +16,7 @@ const CategorySection = () => {
             id: 2, 
             title: 'Desserts',
             description: 'Decadent desserts crafted for pure indulgence',
-            imageUrl: 'https://tmfcakedesigns.com/cdn/shop/products/TMFCakeDesigns_Xmas_25.jpg?v=1672791219&width=1500',
+            imageUrl: 'https://www.allrecipes.com/thmb/FRzTyEYbAi3hJsIctlq8toGKv_A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hot-fudge-ice-cream-bar-dessert-22728-7a84d325fdd04ccc8976bf1478d8362d.jpg',
         },
         {
             id: 3, 
